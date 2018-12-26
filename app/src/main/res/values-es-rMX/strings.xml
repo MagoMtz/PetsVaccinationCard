@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cartilla de vacunación para mascotas</string>
+    <string name="add_edit_pet.activity.msg.pet_updated">Mascota actualizada</string>
+    <string name="add_edit_pet.activity.msg.pet_saved">Mascota guardada</string>
+    <string name="add_edit_pet.activity.et.pet_name">Nombre de la mascota</string>
+    <string name="add_edit_pet.activity.et.pet_kind">Tipo</string>
+    <string name="add_edit_pet.activity.tv.pet_sex">Sexo</string>
+    <string name="add_edit_pet.activity.rb.pet_sex_male">Masculino</string>
+    <string name="add_edit_pet.activity.rb.pet_sex_female">Femenino</string>
+    <string name="add_edit_pet.activity.tv.pet_birthday">Fecha de nacimiento</string>
+    <string name="add_edit_pet.activity.et.pet_breed">Raza</string>
+    <string name="add_edit_pet.activity.et.pet_color">Color</string>
+    <string name="add_edit_pet.activity.et.pet_id_number">Número de identificación</string>
+    <string name="add_edit_pet.activity.et.pet_particular_signs">Señas particulares</string>
+    <string name="add_edit_pet.activity.tv.pet_micro_chip">Micro chip</string>
+    <string name="add_edit_pet.activity.tv.pet_tattoo">Tatuaje</string>
+    <string name="add_edit_pet.activity.tv.pet_owner">Dueño</string>
+    <string name="add_edit_pet.activity.tv.pet_vaccines">Vacunas</string>
+    <string name="add_edit_pet.activity.tv.link.add_owner"><u>Agregar nuevo dueño</u></string>
+    <string name="add_edit_pet.activity.tv.link.add_vaccine"><u>Agregar nueva vacuna</u></string>
+    <string name="add_edit_owner.activity.et.owner_first_name">Nombres</string>
+    <string name="add_edit_owner.activity.et.owner_last_name">Apellidos</string>
+    <string name="add_edit_owner.activity.et.owner_address">Dirección</string>
+    <string name="add_edit_owner.activity.et.owner_phone">Número de teléfono</string>
+    <string name="err_msg_null_field">El dato no puede estar vacío</string>
+    <string name="add_edit_vaccine.activity.et.vaccine_name">Nombre</string>
+    <string name="add_edit_owner.activity.tv.implementation_date">"Fecha de aplicación "</string>
+    <string name="add_edit_owner.activity.tv.next_appointment_date">Siguiente cita</string>
+    <string name="pet_list.activity.tv.no_pet_msg">Parece que aún no registrar a tus mascotas</string>
+    <string name="err_msg_invalid_phone">El numéro de teléfono es invalido</string>
+    <string name="title_activity_add_edit_pet">Agregar una nueva mascota</string>
+    <string name="title_activity_add_edit_owner">Agregar un nuevo dueño</string>
+    <string name="title_activity_add_edit_vaccine">Agregar una nueva vacuna</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_adapter_img_width">60dp</dimen>
+    <dimen name="list_adapter_img_height">60dp</dimen>
+    <dimen name="list_adapter_main_margin">16dp</dimen>
+    <dimen name="list_adapter_vertical">32dp</dimen>
+    <dimen name="fab_width">64dp</dimen>
+    <dimen name="fab_height">64dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="form_element_input_margin">16dp</dimen>
+    <dimen name="add_edit_pet.activity.owner_scrollview_height">220dp</dimen>
+    <dimen name="add_edit_pet.activity.add_btn.height">32dp</dimen>
+    <dimen name="add_edit_pet.activity.add_btn.width">32dp</dimen>
+</resources>

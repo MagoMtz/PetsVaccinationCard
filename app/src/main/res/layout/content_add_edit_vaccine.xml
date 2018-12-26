@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical"
+        tools:context=".addeditowner.ui.view.AddEditVaccineActivity"
+        tools:showIn="@layout/activity_add_edit_vaccine">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tily_vaccine_name"
+            android:layout_marginLeft="@dimen/form_element_input_margin"
+            android:layout_marginRight="@dimen/form_element_input_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_vaccine_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:singleLine="true"
+                android:hint="@string/add_edit_vaccine.activity.et.vaccine_name"
+                android:imeOptions="actionNext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_application_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/list_adapter_main_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_edit_owner.activity.tv.implementation_date"
+                style="@style/Adapter_TextView_MainText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tily_implementation_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:layout_marginLeft="@dimen/form_element_input_margin"
+                    android:layout_marginRight="@dimen/form_element_input_margin"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_implementation_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:text="@string/date_format"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_implementation_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    app:srcCompat="@drawable/ic_calendar"
+                    android:backgroundTint="@android:color/transparent"
+                    android:tint="@color/colorPrimaryDark"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_next_appointment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/list_adapter_main_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_edit_owner.activity.tv.next_appointment_date"
+                style="@style/Adapter_TextView_MainText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tily_next_appointment_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:layout_marginLeft="@dimen/form_element_input_margin"
+                    android:layout_marginRight="@dimen/form_element_input_margin"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_next_appointment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:text="@string/date_format"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_next_appointment_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    app:srcCompat="@drawable/ic_calendar"
+                    android:backgroundTint="@android:color/transparent"
+                    android:tint="@color/colorPrimaryDark"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</layout>

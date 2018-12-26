@@ -1,0 +1,87 @@
+ext {
+    compileSdkV = 28
+    minSdkV = 19
+    targetSdkV = 28
+    codeV = 1
+    nameV = "1.0"
+
+    //signing configs
+    aliasKey = 'magomtzkey'
+    passwordKey = 'margaro12'
+    passwordStore = 'margaro12'
+
+    //versions
+    appCompatV = '28.0.0'
+    constraintLyV = '1.1.3'
+    junitV = '4.12'
+    testRunnerV = '1.0.2'
+    espressoV = '3.0.2'
+
+    gsonV = '2.8.5'
+    roomV = '1.1.1'
+    eventBusV = '3.1.1'
+    daggerV = '2.0.1'
+    glideV = '4.8.0'
+    circleIVV = '2.2.0'
+    firebaseV = '16.0.6'
+    crashlyticsV = '2.9.8@aar'
+
+    //package
+    supportP = 'com.android.support'
+    junitP = 'junit'
+    supportTestP = 'com.android.support.test'
+
+    gsonP = 'com.google.code.gson'
+    roomP = 'android.arch.persistence.room'
+    greenRobotP = 'org.greenrobot'
+    daggerP = 'com.google.dagger'
+    glideP = 'com.github.bumptech.glide'
+    circleIVP = 'de.hdodenhof'
+    firebaseP = 'com.google.firebase'
+    crashlyticsP = 'com.crashlytics.sdk.android'
+
+    androidDependencies = [
+            appCompat : buildDependency(supportP, 'appcompat-v7', appCompatV),
+            constraintLy : buildDependency(supportP+".constraint", 'constraint-layout', constraintLyV),
+            design : buildDependency(supportP, 'design', appCompatV)
+    ]
+
+    testDependencies = [
+            junit : buildDependency(junitP, 'junit', junitV),
+            testRunner : buildDependency(supportTestP, 'runner', testRunnerV),
+            espresso : buildDependency(supportTestP+".espresso", 'espresso-core', espressoV)
+    ]
+
+    appDependencies = [
+            gson : buildDependency(gsonP, 'gson', gsonV),
+            eventBus : buildDependency(greenRobotP, 'eventbus', eventBusV),
+            glide : buildDependency(glideP, 'glide', glideV),
+            glideCompiler : buildDependency(glideP, 'compiler', glideV),
+            circleIV : buildDependency(circleIVP, 'circleimageview', circleIVV)
+    ]
+
+    daggerDependencies = [
+            dagger : buildDependency(daggerP, 'dagger', daggerV),
+            daggerCompiler : buildDependency(daggerP, 'dagger-compiler', daggerV),
+            daggerProcesor : buildDependency('org.glassfish', 'javax.annotation', '10.0-b28')
+    ]
+
+    roomDependencies = [
+            runtime : buildDependency(roomP, 'runtime', roomV),
+            roomRx : buildDependency(roomP, 'rxjava2', roomV),
+            compiler : buildDependency(roomP, 'compiler', roomV)
+    ]
+
+    firebaseDependencies = [
+            core : buildDependency(firebaseP, 'firebase-core', firebaseV)
+
+    ]
+
+    crashlyticsDependencies = [
+            crashlytics : buildDependency(crashlyticsP, 'crashlytics', crashlyticsV)
+    ]
+}
+
+static String buildDependency(String pack, String dependency, String version) {
+    return "${pack}:${dependency}:$version"
+}

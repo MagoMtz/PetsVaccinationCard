@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/list_adapter_main_margin"
+    android:background="@drawable/adapter_selector"
+    >
+
+    <ImageView
+        android:id="@+id/img_adapter"
+        android:layout_width="@dimen/list_adapter_img_width"
+        android:layout_height="@dimen/list_adapter_img_height"
+        tools:srcCompat="@mipmap/ic_launcher"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_pet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Adapter_TextView_MainText"
+        tools:text="Snooky"
+        android:layout_marginStart="@dimen/list_adapter_vertical"
+        app:layout_constraintStart_toEndOf="@id/img_adapter"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_owner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Adapter_TextView_SideText"
+        tools:text="Jorge Martinez"
+        android:layout_marginStart="@dimen/list_adapter_vertical"
+        app:layout_constraintStart_toEndOf="@id/img_adapter"
+        app:layout_constraintTop_toBottomOf="@id/tv_pet_name"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
+</layout>

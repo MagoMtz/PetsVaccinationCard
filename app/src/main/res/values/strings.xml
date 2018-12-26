@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Pet\'s Vaccination Card</string>
+    <string name="title_activity_add_edit_pet">Add New Pet</string>
+    <string name="add_edit_pet.activity.msg.pet_updated">Pet updated</string>
+    <string name="add_edit_pet.activity.msg.pet_saved">Pet saved</string>
+    <string name="add_edit_pet.activity.et.pet_name">Pet\'s name</string>
+    <string name="add_edit_pet.activity.et.pet_kind">Kind</string>
+    <string name="add_edit_pet.activity.tv.pet_sex">Sex</string>
+    <string name="add_edit_pet.activity.rb.pet_sex_male">Male</string>
+    <string name="add_edit_pet.activity.rb.pet_sex_female">Female</string>
+    <string name="add_edit_pet.activity.tv.pet_birthday">Birthday</string>
+    <string name="date_format" translatable="false">dd/mm/yyyy</string>
+    <string name="date_format_value" translatable="false">%s/%s/%s</string>
+    <string name="add_edit_pet.activity.et.pet_breed">Breed</string>
+    <string name="add_edit_pet.activity.et.pet_color">Color</string>
+    <string name="add_edit_pet.activity.et.pet_id_number">Id number</string>
+    <string name="add_edit_pet.activity.et.pet_particular_signs">Particular signs</string>
+    <string name="add_edit_pet.activity.tv.pet_micro_chip">Micro chip</string>
+    <string name="add_edit_pet.activity.tv.pet_tattoo">Tattoo</string>
+    <string name="add_edit_pet.activity.tv.pet_owner">Owner</string>
+    <string name="add_edit_pet.activity.tv.pet_vaccines">Vaccines</string>
+    <string name="add_edit_pet.activity.tv.link.add_owner"><u>Add new owner</u></string>
+    <string name="add_edit_pet.activity.tv.link.add_vaccine"><u>Add new vaccine</u></string>
+    <string name="title_activity_add_edit_owner">Add New Owner</string>
+    <string name="add_edit_owner.activity.et.owner_first_name">First name</string>
+    <string name="add_edit_owner.activity.et.owner_last_name">Last name</string>
+    <string name="add_edit_owner.activity.et.owner_address">Address</string>
+    <string name="add_edit_owner.activity.et.owner_phone">Phone number</string>
+    <string name="err_msg_null_field">Field can\'t be void</string>
+    <string name="err_msg_invalid_phone">Phone number is invalid</string>
+    <string name="title_activity_add_edit_vaccine">Add New Vaccine</string>
+    <string name="add_edit_vaccine.activity.et.vaccine_name">Name</string>
+    <string name="add_edit_owner.activity.tv.implementation_date">Implementation date</string>
+    <string name="add_edit_owner.activity.tv.next_appointment_date">Next appointment</string>
+    <string name="pet_list.activity.tv.no_pet_msg">Looks like you don\'t have pets registered yet.</string>
+</resources>

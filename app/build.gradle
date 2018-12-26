@@ -1,0 +1,92 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias aliasKey
+            keyPassword passwordKey
+            storeFile file('/Users/jorgemartinez/AndroidStudioProjects/magomtzkey')
+            storePassword passwordStore
+        }
+    }
+    compileSdkVersion compileSdkV
+    defaultConfig {
+        applicationId "com.mago.petsvaccinationcard"
+        minSdkVersion minSdkV
+        targetSdkVersion targetSdkV
+        versionName nameV
+        versionCode codeV
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        signingConfig signingConfigs.config
+    }
+    dataBinding {
+        enabled true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            resValue "string", "FABRIC_API_KEY", project.property('FABRIC_API_KEY')
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "FABRIC_API_KEY", project.property('FABRIC_API_KEY')
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //android dependencies
+    implementation androidDependencies.appCompat
+    implementation androidDependencies.design
+    implementation androidDependencies.constraintLy
+    //app dependencies
+    implementation appDependencies.gson
+    implementation appDependencies.eventBus
+    implementation appDependencies.glide
+    annotationProcessor appDependencies.glideCompiler
+
+    //dagger dependencies
+    implementation daggerDependencies.dagger
+    implementation daggerDependencies.daggerProcesor
+    annotationProcessor daggerDependencies.daggerCompiler
+    //room Dependencies
+    implementation roomDependencies.runtime
+    implementation roomDependencies.roomRx
+    annotationProcessor roomDependencies.compiler
+    testImplementation testDependencies.junit
+    androidTestImplementation testDependencies.testRunner
+    androidTestImplementation testDependencies.espresso
+
+    //crashlytics dependencies
+    implementation (crashlyticsDependencies.crashlytics) {
+        transitive true
+    }
+
+    //firebase dependencies
+    implementation firebaseDependencies.core
+}
